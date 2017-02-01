@@ -1,0 +1,157 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header-nav {
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.etsy-logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.etsy-logo a {
+  font-family: georgia;
+  font-size: 38px;
+  color: #E66C36;
+  margin-right: 5px;
+}
+
+.input-group {
+  display: inline-block;
+  margin-top: 25px;
+  width: 500px;
+  padding-left: 20px;
+
+  .form-control {
+    width: 385px;
+    color: #CECBC8;
+  }
+}
+
+.search-btn {
+  background-color: #53A6BF;
+  color: #FFF;
+  width: 80px;
+  height: 34px;
+}
+
+.right-nav {
+  float: right;
+  width: 500px;
+  margin-top: 25px;
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  ul {
+    display: inline-block;
+    padding-left: 169px;
+    margin-top: 5px;
+  }
+
+  a {
+    font-size: 14px;
+    color: #53A6BF;
+  }
+
+  button {
+    color: #53A6BF;
+    border-color: #53A6BF;
+  }
+  .cart {
+    display: inline-block;
+    float:right;
+    padding-right: 35px;
+    border-left: 1px solid #EEEEEE;
+    height: 40px;
+  }
+
+  p {
+    padding-left: 20px;
+  }
+
+.glyphicon-shopping-cart {
+  display: inline-block;
+  color: #666666;
+  font-size: 22px;
+  padding-left: 20px;
+  }
+}
+
+.sub-heading-nav {
+  margin-top: 10px;
+  border-bottom: 2px solid #EEEFEC;
+  border-top: 2px solid #EEEFEC;
+
+  li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 25px;
+    padding-top: 13px;
+  }
+  a {
+    color: #777777;
+  }
+}
+
+//wrapper for body
+
+.wrapper {
+  background-color: #F5F5F1;
+
+
+}
+
+.content-holder {
+  margin-left: 35px;
+}
+
+//first nav side bar
+
+.side1 {
+
+  width: 18%;
+  margin-top:10px;
+  h3 {
+    font-size: 14px;
+  }
+}
+
+.sidebar-heading1 {
+  padding-bottom: 10px;
+}
+
+.sidebar-nav {
+  background-color: #FFF;
+  border: 2px solid #E1E3DF;
+  padding-left: 6px;
+
+  li {
+    list-style: none;
+    padding-left: 18px;
+    line-spacing: 1.5;
+  }
+}
+
+#sidebar-brand1 {
+  a {
+  color: black;
+ }
+}
