@@ -1,23 +1,33 @@
-/*
-  (url: String, callback: Function) -> undefined
+// (url: String, callback: Function) -> undefined
 
-  Execute a callback function with the JSON results from the url specified.
+  var handlebars = require('handlebars');
+  var $ = require('jquery');
+  var _ = require('underscore');
 
-  Examples
-      var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=yarn&includes=Images,Shop";
+  var source = $('#etsy-template').html();
+  var template = handlebars.compile(source);
+
+
+  // Execute a callback function with the JSON results from the url specified.
+
+
+      var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=fox%20racing&includes=Images,Shop";
 
       fetchJSONP(url, function(data) {
-        // do something with data
+        console.log(data);
+        data.results.forEach(function(item){
+          console.log(item);
+          var context = {
+            title: item.title,
+            price: item.price,
+            image: item.Images[0].url_170x135,
+            description: item.Shop.login_name
+          };
+          $('.my-images').append(template(context));
+        })
+
       });
 
-      // OR
-
-      function logData(data) {
-        console.log(data);
-      }
-
-      fetchJSONP(url, logData);
-*/
 function fetchJSONP(url, callback) {
     var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
     var script = document.createElement('script');
