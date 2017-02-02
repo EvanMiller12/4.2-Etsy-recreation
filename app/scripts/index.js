@@ -2,7 +2,6 @@
 
   var handlebars = require('handlebars');
   var $ = require('jquery');
-  var _ = require('underscore');
 
   var source = $('#etsy-template').html();
   var template = handlebars.compile(source);
@@ -14,9 +13,9 @@
       var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=fox%20racing&includes=Images,Shop";
 
       fetchJSONP(url, function(data) {
-        console.log(data);
+        // console.log(data);
         data.results.forEach(function(item){
-          console.log(item);
+          // console.log(item);
           var context = {
             title: item.title,
             price: item.price,
