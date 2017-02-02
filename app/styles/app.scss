@@ -156,7 +156,7 @@ body {
   background-color: #FFF;
   border: 2px solid #E1E3DF;
   padding-left: 6px;
-  padding-right: 10px;
+
 
   li {
     list-style: none;
@@ -181,6 +181,8 @@ body {
 
 form {
   padding-bottom: 10px;
+  margin-right: -14px;
+  margin-left: -14px;
 }
 
 .colors {
@@ -191,7 +193,7 @@ form {
 .square {
     display: inline-block;
     height: 20px;
-    width: 20px;
+    width: 17px;
 
   }
   .red {
@@ -218,17 +220,7 @@ form {
   .white {
       border: .5px solid #E2E2E2;
     }
-
 }
-
-.square {
-  height: 10px;
-  width: 10px;
-
-  }
-  .red {
-    background-color: #E33945;
-    }
 //nav above pictures
 
 .pic-product-nav {
@@ -269,6 +261,7 @@ li {
   text-align: center;
   padding-bottom: 20px;
 
+
 img {
   width: 100%;
 }
@@ -283,7 +276,7 @@ p{
   padding-left: 5px;
   padding-top: 5px;
 
-}
+ }
 }
 
 .pic-box {
@@ -292,6 +285,7 @@ p{
   white-space: nowrap;
   overflow: hidden;
   width: 90%;
+  box-shadow: 1px 2px 2px #888888;
 
 }
 
